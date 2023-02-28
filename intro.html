@@ -13,7 +13,7 @@
     body {
     background-color: #0f0f0f ;
     }
-    .container { display: inline-block; } 
+    .container { display:grid; } 
 
     .text {
     position: absolute;
@@ -23,16 +23,16 @@
     font-size: 3em;
     letter-spacing: 2px;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    border-right: 5px solid;
+    border-right: 2px solid;
     width: 100% ;
     white-space:nowrap;
     overflow: hidden;
-    animation: typing 2s, cursor .4s step-end infinite alternate;
+    animation: typing 4s, cursor .4s step-end infinite alternate;
     }
 
     /*cursor piscando*/
     @keyframes cursor {
-        50% { border-color: transparent;}
+        50% { border-color:transparent;}
     }
     /*efeito escrever*/
     @keyframes typing {
@@ -46,7 +46,7 @@
     animation: anima_logo 2s forwards ;
      }
     @keyframes anima_logo {
-         0%   { left: 0px;  top: 240px;}
+         0%   { left: 0px;  top: 250px;}
        
         100% { left: 670px;  top: 250px;  }   
     }
